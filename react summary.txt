@@ -1,0 +1,46 @@
+---------------------------------------day 1----------------------------------
+
+var React = require("react");
+var ReactDOM = require("react-dom");
+
+ReactDOM.render(What to show , where to show it);
+
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+var React = require("react");
+var ReactDOM = require("react-dom");
+
+ReactDOM.render(<h1>Hello World!</h1>, document.getElementById("root"));
+
+--------------------------------------------------------
+
+render method is used to display the h1 inside the root div here.
+
+---------------------------------------------------------
+
+Inside the react module , there is something called babel and babel is a javascript compiler.
+
+-----------------------------------------------------------------
+
+ReactDOM.render(<h1>Hello World!</h1><p>This is a paragraph.</p>, document.getElementById("root"));   -----> this is wrong as render method only take a single html element 
+
+To add a para too use div :-
+
+import React from "react";
+import ReactDOM from "react-dom";
+
+ReactDOM.render(
+<div>
+<h1>Hello World!</h1>
+<p>Hey there!</p>
+</div>,
+document.getElementById("root")); 
+
+anything that goes inside a div still counts as a single HTML element
+
+-----------------------------------------------------------------
+
+
+
+
+
