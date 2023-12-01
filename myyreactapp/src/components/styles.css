@@ -2,3 +2,47 @@
     color:red;
     
 }
+
+header{
+    background-color:yellow;
+    box-shadow: 10px 5px 5px rgb(214, 189, 189);
+    padding: 10px 30px;
+    margin: 16px;
+    
+
+}
+
+.head{
+color:rgb(47, 132, 207);
+font-family: 'Times New Roman', Times, serif;
+font-weight: 200;
+}
+.note{
+    background:white;
+    width:240px;
+    padding:10px;
+    float:left;
+    margin:16px;
+    border-radius: 7px;
+}
+.note h1{
+    font-size: 1.1em;
+    margin-bottom: 6px;
+}
+
+.note p{
+    font-size: 1.1em;
+    margin-bottom: 10 px;
+}
+
+footer{
+    position:absolute;
+    text-align: center;
+    bottom:0;
+    height:2.5rem;
+    width:100%;
+}
+
+.cp{
+    color:rgb(10, 10, 10);
+}
