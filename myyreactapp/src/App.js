@@ -1,6 +1,8 @@
 
-import MyComponent from './components/food.js';
-import {GreetingsComponent} from './components/reactStylePrac.js';
+import List from './components/List.jsx';
+import { MathsComponent } from './components/Maths.jsx';
+import MyComponent from './components/food.jsx';
+import { GreetingsComponent } from './components/reactStylePrac.jsx';
 
 function App() {
   return (
@@ -8,6 +10,10 @@ function App() {
       <header className="App-header">
         <MyComponent />
         <GreetingsComponent />
+        <List />
+        <List />
+        <MathsComponent />
+        
       </header>
     </div>
   );
