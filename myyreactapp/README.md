@@ -1,70 +1,73 @@
-# Getting Started with Create React App
+// var numbers = [3, 56, 2, 48, 5];
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+//Map -Create a new array by doing something with each item in an array.
 
-## Available Scripts
+// function double(x) {
+//   return x * 2;
+// }
+// const newNumbers = numbers.map(double);
 
-In the project directory, you can run:
+// var newNumbers = [];
+// numbers.forEach(function (x) {
+//   newNumbers.push(x * 2);
+// });
 
-### `npm start`
+// const newNumbers = numbers.map(function (x) {
+//   return x * 2;
+// });
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+// console.log(newNumbers);
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+//Filter - Create a new array by keeping the items that return true.
 
-### `npm test`
+// const newNumbers = numbers.filter(function(num) {
+//   return num < 10;
+// });
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+// var newNumbers = [];
+// numbers.forEach(function(num) {
+//   if (num < 10) {
+//     newNumbers.push(num);
+//   }
+// })
 
-### `npm run build`
+//Reduce - Accumulate a value by doing something to each item in an array.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+// var newNumber = numbers.reduce(function (accumulator, currentNumber) {
+//   console.log("accumulator = " + accumulator);
+//   console.log("currentNumber = " + currentNumber);
+//     return accumulator + currentNumber;
+// })
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+// var newNumber = 0;
+// numbers.forEach(function (currentNumber) {
+//   newNumber += currentNumber
+// })
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+//Find - find the first item that matches from an array.
 
-### `npm run eject`
+// const newNumber = numbers.find(function (num) {
+//   return num > 10;
+// })
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+// console.log(newNumber);
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+//FindIndex - find the index of the first item that matches.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+// const newNumber = numbers.findIndex(function (num) {
+//   return num > 10;
+// })
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+// console.log(newNumber);
 
-## Learn More
+//Challenge Solution
+import emojipedia from "./emojipedia";
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+const newEmojipedia = emojipedia.map(function(emojiEntry) {
+  return emojiEntry.meaning.substring(0, 100);
+});
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+console.log(newEmojipedia);
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+this helped us to truncate the description of the emojis.
